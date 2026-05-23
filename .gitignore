@@ -1,0 +1,50 @@
+# Gradle
+.gradle/
+build/
+*.apk
+*.aar
+*.zip
+*.tar.gz
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Local configuration file
+local.properties
+google-services.json
+keystore.jks
+*.keystore
+
+# Kotlin
+kotlin/
+out/
+
+# Python
+*.py[cod]
+__pycache__/
+
+# Distribution / packaging
+.Python
+env/
+venv/
+build/
+develop-eggs/
+
+# IDE
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+*.lcov
