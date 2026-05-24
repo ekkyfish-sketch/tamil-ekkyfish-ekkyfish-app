@@ -18,6 +18,11 @@ android {
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        buildConfigField(
+            "String",
+            "NOTIFICATION_API_BASE_URL",
+            "\"${project.findProperty("NOTIFICATION_API_BASE_URL") ?: "https://your-backend.example.com/"}\""
+        )
     }
 
     signingConfigs {
@@ -54,7 +59,6 @@ android {
 
     buildFeatures {
         compose = true
-        dataBinding = true
         buildConfig = true
     }
 
